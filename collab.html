@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaborate – Henriqué Barcelos Jr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="collab.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="bg1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+<nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="desktop-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="podcast.html">Podcast</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="collab.html" class="highlight">Collaborate</a></li>
+  </ul>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="music.html">Music</a>
+  <a href="collab.html">Collaborate</a>
+</div>
+
+
+
+  <section class="form-wrapper">
+    <h1>Let’s Collaborate</h1>
+    <p class="tagline">Artists. Brands. Dreamers. Let’s make something unforgettable.</p>
+
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject or Project Type" />
+      <textarea name="message" placeholder="Tell me your idea..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
+</script>

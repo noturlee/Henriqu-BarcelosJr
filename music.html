@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music - Henriqué Barcelos Jr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="music.css" />
+  <style>
+    .single-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="bg-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+<nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="desktop-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="highlight" href="#">Podcast</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="collab.html">Collaborate</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="music.html">Music</a>
+  <a href="collab.html">Collaborate</a>
+</div>
+
+
+  <header>
+    <h1>Henriqué’s Music</h1>
+    <p class="tagline">Feel every word. Live every note.</p>
+  </header>
+
+  <section class="singles">
+    <a href="https://music.apple.com/za/album/wanted-me/1782451403?i=1782451408" class="single-link" target="_blank">
+      <div class="single">
+        <img src="wanted.jpeg" alt="Wanted Me Cover" />
+        <div class="single-content">
+          <h2>Wanted Me</h2>
+          <p>Powerful. Reflective. Unfiltered. Tap in and feel every lyric.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://music.apple.com/za/album/a-pocket-full-of-dreams-single/1737583995" class="single-link" target="_blank">
+      <div class="single">
+        <img src="pocket.jpeg" alt="A Pocket Full of Dreams Cover" />
+        <div class="single-content">
+          <h2>A Pocket Full of Dreams</h2>
+          <p>Melodic hope wrapped in vulnerability. A sound for dreamers.</p>
+        </div>
+      </div>
+    </a>
+  </section>
+</body>
+</html>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
+</script>

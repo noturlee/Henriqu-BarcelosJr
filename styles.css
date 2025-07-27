@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'Extenda 40 Hecto';
+  src: url('fonts/Extenda-40-Hecto-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background: url('bg.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+nav {
+  background: transparent;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer; /* ← Move it here */
+  transition: color 0.3s ease;
+}
+
+nav ul li a.highlight,
+nav ul li a:hover {
+  color: #5CE1E6;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 80px); /* 80px = navbar height */
+  padding: 0 60px;
+  position: relative;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.9;
+}
+
+.first-name {
+  color: #5CE1E6;
+  font-size: 60px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.last-name {
+  font-size: 28vw;
+  margin: 0;
+  margin-top: -20px;
+  color: #f0f0f5;
+  font-family: 'Extenda 40 Hecto', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.jr-block {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+}
+
+.jr {
+  font-size: 3vw;
+  color: #5CE1E6;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 2px black);
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile Nav Overlay */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.mobile-nav a:hover {
+  color: #5CE1E6;
+}
+
+@media screen and (max-width: 768px) {
+  #bg-video {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  nav .desktop-nav {
+    display: none;
+  }
+  
+
+ body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('phone.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -2;
+}
+
+
+  nav .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .singles {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .single {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header .tagline {
+    font-size: 16px;
+  }
+}
+

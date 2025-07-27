@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast – Henriqué Barcelos Jr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="podcast.css" />
+</head>
+<body>
+<nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="desktop-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="highlight" href="#">Podcast</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="collab.html">Collaborate</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="music.html">Music</a>
+  <a href="collab.html">Collaborate</a>
+</div>
+
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="music.html">Music</a>
+  <a href="collab.html">Collaborate</a>
+</div>
+
+
+  <main class="podcast-page">
+    <h1>Henriqué's Podcast</h1>
+    <p class="subheading">Watch the latest episodes and behind-the-scenes content</p>
+
+    <div class="video-player">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="Now Playing" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2 class="section-title">Episodes</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <img src="thumb1.jpg" alt="Episode 1">
+        <h3>Episode 1: The Start of the Journey</h3>
+      </div>
+      <div class="video-card">
+        <img src="thumb2.jpg" alt="Episode 2">
+        <h3>Episode 2: Passion & Purpose</h3>
+      </div>
+      <div class="video-card">
+        <img src="thumb3.jpg" alt="Episode 3">
+        <h3>Episode 3: Vulnerability in Art</h3>
+      </div>
+      <!-- Add more placeholder cards -->
+    </div>
+  </main>
+</body>
+</html>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
+</script>

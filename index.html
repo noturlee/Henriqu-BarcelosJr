@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Henriqué Barcelos Jr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="desktop-nav">
+    <li><a class="highlight" href="#">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="podcast.html">Podcast</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="collab.html">Collaborate</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="music.html">Music</a>
+  <a href="collab.html">Collaborate</a>
+</div>
+
+
+  <main class="hero">
+  </main>
+</body>
+
+<div class="social-icons">
+  <a href="https://music.apple.com/za/artist/henrique-barcelos-jr/1782451403" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/apple-music.png" alt="Apple Music" />
+  </a>
+  <a href="https://instagram.com/henriquebarcelosjr" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" />
+  </a>
+  <a href="https://tiktok.com/@henriquebarcelosjr" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png" alt="TikTok" />
+  </a>
+</div>
+
+
+
+</html>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
+</script>
+

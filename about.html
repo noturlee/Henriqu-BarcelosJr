@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Henriqué Barcelos Jr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+<nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="desktop-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="podcast.html">Podcast</a></li>
+    <li><a class="highlight" href="#">Music</a></li>
+    <li><a href="collab.html">Collaborate</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="music.html">Music</a>
+  <a href="collab.html">Collaborate</a>
+</div>
+
+
+  <section class="about-hero">
+    <div class="text-box">
+      <h1 class="glow">Henriqué Barcelos Jr</h1>
+      <p class="subtitle">Creator • Storyteller • Faith-driven Voice</p>
+    </div>
+  </section>
+
+  <section class="bio">
+    <div class="bio-content">
+      <p>
+        I’m Henriqué — a 23-year-old content creator and creative visionary from Johannesburg.
+        I use my voice, my lens, and my platform to bring real stories to life.
+        Whether I’m behind the mic on my podcast or creating videos that connect,
+        everything I share comes from a place of authenticity, vulnerability, and purpose.
+      </p>
+      <p>
+        My work explores faith, mental health, and the raw beauty of healing.
+        I believe in using creativity to build community — and in showing up with love, every time.
+        This isn’t just content. It’s connection. It’s intention. It’s legacy in the making.
+      </p>
+      <p>
+        Let's build something that matters. You're not just watching a journey — you're part of it.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
+</script>
